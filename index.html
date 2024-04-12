@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="sign.png" type="image/png">
+</head>
+<body>
+  <div class="main-container">
+    <div class="top-container">
+        <div class="choose">
+            <h5>Text Color</h5>
+            <input id="textColor" type="color">
+        </div>
+        <div class="choose">
+            <h5>Background</h5>
+            <input id="bgColor" type="color">
+        </div>
+        <div class="choose">
+            <h5>Font Size</h5>
+            <select class="custom-select" id="fontSize">
+                <option selected>Select Font Size</option>
+                <option value="5">5px</option>
+                <option value="10">10px</option>
+                <option value="15">15px</option>
+                <option value="20">20px</option>
+                <option value="25">25px</option>
+                <option value="30">30px</option>
+                <option value="35">35px</option>
+                <option value="40">40px</option>
+              </select>
+        </div>
+        <div class="choose">
+            <h5>Width</h5>
+            <input type="range" min="1" max="10" value="1" id="textWidth">
+        </div>
+    </div>
+    <canvas class="canvas" id="myCanvas" width="800" height="450"></canvas>
+    <div class="bottom-container">
+        <button type="submit" id="clear">Clear</button>
+        <button type="submit" id="save">Save & Download</button>
+        <!-- <button type="submit" id="retreive">Retreive Saved Sign</button> -->
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
